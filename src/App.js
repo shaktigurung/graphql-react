@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from 'react-apollo';
-import Courses from './components/Courses';
+import Products from './components/Products';
 
 const client = new ApolloClient({
-  uri: "https://vm8mjvrnv3.lp.gql.zone/graphql"
+  uri: "https://fakerql.com/graphql"
 });
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
             <a className="navbar-brand" href="#">React and GraphQL - Application</a>
           </nav>
           <div>
-          <Courses />
+          <Products />
         </div>
     </div>
       </ApolloProvider>
